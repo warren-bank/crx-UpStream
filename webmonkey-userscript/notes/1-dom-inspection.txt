@@ -1,0 +1,57 @@
+--------------------------------------------------------------------------------
+
+https://www.2embed.ru/
+
+API URL query format:
+  https://www.2embed.ru/embed/imdb/movie?id=IMDB ID
+  https://www.2embed.ru/embed/imdb/tv?id=IMDB ID&s=SEASON NUMBER&e=EPISODE NUMBER
+
+--------------------------------------------------------------------------------
+
+https://www.imdb.com/title/tt4051832/
+  Lovesick
+
+https://www.2embed.ru/embed/imdb/tv?id=tt4051832&s=1&e=1
+
+found in DOM:
+=============
+  <div class="dropdown-menu dropdown-menu-model">
+      <a class="dropdown-item item-server" href="javascript:;" data-id="2496523">Server Vidcloud</a>
+      <a class="dropdown-item item-server" href="javascript:;" data-id="1005264">Server Upstream</a>
+      <a class="dropdown-item item-server" href="javascript:;" data-id="2239892">Server Hydrax</a>
+  </div>
+
+--------------------------------------------------------------------------------
+
+https://www.2embed.ru/ajax/embed/play?id=2496523&_token=
+  {"type":"iframe","link":"https://streamrapid.ru/embed-5/1wH0qkHbygZp?z=","sources":[],"tracks":[]}
+
+https://www.2embed.ru/ajax/embed/play?id=1005264&_token=
+  {"type":"iframe","link":"https://upstream.to/embed-nfknn582q4zs.html","sources":[],"tracks":[]}
+
+https://www.2embed.ru/ajax/embed/play?id=2239892&_token=
+  {"type":"iframe","link":"https://embed2.megaxfer.ru/embed2/9879febc237256bd5a48a41fefe1dae9","sources":[],"tracks":[]}
+
+--------------------------------------------------------------------------------
+
+https://upstream.to/embed-nfknn582q4zs.html
+
+note:
+=====
+  webpage will load in top browser window, without any iframe (or special HTTP request headers)
+
+found in DOM:
+=============
+  <script type='text/javascript'>
+    eval(function(p,a,c,k,e,d){while(c--)if(k[c])p=p.replace(new RegExp('\\b'+c.toString(a)+'\\b','g'),k[c]);return p}('8("o").4b({4a:[{1i:"g://1m.1l.1k/49/,48,.47/46.45"}],44:"g://1m.1l.1k/i/1j/43/h.42",k:"c%",j:"c%",41:"1f",40:"3z.1j",3y:\'3x\',3w:"12",7:[{1i:"/1h/3v.1h",3u:"13 3t",3s:"1g"}],1g:{3r:\'#3q\',3p:16,3o:"3n",3m:0,3l:\'1f\',3k:3j},3i:"",3h:"g://1b.1a",3g:{}});6 m,n;6 3f=0,3e=0;6 3=8();6 1e=0,3d=0,3c=0;$.3b({3a:{\'39-37\':\'s-36\'}});3.9(\'35\',2(x){a(5>0&&x.l>=5&&n!=1){n=1;$(\'d.34\').33(\'32\')}});3.9(\'31\',2(x){1e=x.l});3.9(\'q\',2(x){1d(x)});3.9(\'30\',2(){$(\'d.1c\').2z()});2 1d(x){$(\'d.1c\').2y();a(m)2x;m=1;f=0;a(2w.2v===2u){f=1}$.2t(\'g://1b.1a/2s?u=2r&t=h&2q=2p-2o-38-2n-2m&2l=1&f=\'+f,2(19){$(\'#2k\').2j(19)});}2 2i(){6 7=3.2h(17);15.14(7);a(7.18>1){2g(i=0;i<7.18;i++){a(7[i].2f==17){15.14(\'!!=\'+i);3.2e(i)}}}}3.9(\'2d\',2(){$(\'.2c-2b-2a-29:28("13")\').r(2(e){11();8().27(0);8().26(12)});2 11(){6 $b=$("<d />").z({l:"25",k:"c%",j:"c%",24:0,v:0,w:23,22:"21(10%, 10%, 10%, 0.4)","20-1z":"1y"});$("<1x />").z({k:"y%",j:"y%",w:1w,"1v-v":"1u"}).1t({\'1s\':\'/?u=1r&t=h\',\'1q\':\'0\',\'1p\':\'s\'}).p($b);$b.r(2(){$(1o).1n();8().q()});$b.p($(\'#o\'))}});',36,156,'||function|player|||var|tracks|jwplayer|on|if|dd|100|div||adb|https|nfknn582q4zs||height|width|position|vvplay|vvad|vplayer|appendTo|play|click|no|file_code|op|top|zIndex||60|css||showCCform|true|Upload|log|console||track_name|length|data|to|upstream|video_ad|doPlay|prevt|uniform|captions|srt|file|01|co|upstreamcdn|s16|remove|this|scrolling|frameborder|upload_srt|src|prop|50px|margin|1000001|iframe|center|align|text|rgba|background|1000000|left|absolute|pause|setCurrentCaptions|contains|item|content|settings|jw|ready|setCurrentAudioTrack|name|for|getAudioTracks|set_audio_track|html|fviews|embed|267fa4cdd6d2a0fb52948a20ccd4d99a|1635909002|71|425369|hash|view|dl|get|undefined|cRAds|window|return|hide|show|complete|seek|slow|fadeIn|video_ad_fadein|time|cache|Cache||Content|headers|ajaxSetup|v2done|tott|vastdone2|vastdone1|cast|aboutlink|abouttext|90|fontOpacity|edgeStyle|backgroundOpacity|Verdana|fontFamily|fontSize|FFFFFF|color|kind|SRT|label|empty|androidhls|metadata|preload|1444|duration|stretching|jpg|00085|image|m3u8|master|urlset|w47rzks6brbnx2nrozx2mx5nks65xxvhnlov462hekycn43r7t7gvynvtlga|hls|sources|setup'.split('|')))
+  </script>
+
+debug:
+======
+  console.log(function(p,a,c,k,e,d){while(c--)if(k[c])p=p.replace(new RegExp('\\b'+c.toString(a)+'\\b','g'),k[c]);return p}('8("o").4b({4a:[{1i:"g://1m.1l.1k/49/,48,.47/46.45"}],44:"g://1m.1l.1k/i/1j/43/h.42",k:"c%",j:"c%",41:"1f",40:"3z.1j",3y:\'3x\',3w:"12",7:[{1i:"/1h/3v.1h",3u:"13 3t",3s:"1g"}],1g:{3r:\'#3q\',3p:16,3o:"3n",3m:0,3l:\'1f\',3k:3j},3i:"",3h:"g://1b.1a",3g:{}});6 m,n;6 3f=0,3e=0;6 3=8();6 1e=0,3d=0,3c=0;$.3b({3a:{\'39-37\':\'s-36\'}});3.9(\'35\',2(x){a(5>0&&x.l>=5&&n!=1){n=1;$(\'d.34\').33(\'32\')}});3.9(\'31\',2(x){1e=x.l});3.9(\'q\',2(x){1d(x)});3.9(\'30\',2(){$(\'d.1c\').2z()});2 1d(x){$(\'d.1c\').2y();a(m)2x;m=1;f=0;a(2w.2v===2u){f=1}$.2t(\'g://1b.1a/2s?u=2r&t=h&2q=2p-2o-38-2n-2m&2l=1&f=\'+f,2(19){$(\'#2k\').2j(19)});}2 2i(){6 7=3.2h(17);15.14(7);a(7.18>1){2g(i=0;i<7.18;i++){a(7[i].2f==17){15.14(\'!!=\'+i);3.2e(i)}}}}3.9(\'2d\',2(){$(\'.2c-2b-2a-29:28("13")\').r(2(e){11();8().27(0);8().26(12)});2 11(){6 $b=$("<d />").z({l:"25",k:"c%",j:"c%",24:0,v:0,w:23,22:"21(10%, 10%, 10%, 0.4)","20-1z":"1y"});$("<1x />").z({k:"y%",j:"y%",w:1w,"1v-v":"1u"}).1t({\'1s\':\'/?u=1r&t=h\',\'1q\':\'0\',\'1p\':\'s\'}).p($b);$b.r(2(){$(1o).1n();8().q()});$b.p($(\'#o\'))}});',36,156,'||function|player|||var|tracks|jwplayer|on|if|dd|100|div||adb|https|nfknn582q4zs||height|width|position|vvplay|vvad|vplayer|appendTo|play|click|no|file_code|op|top|zIndex||60|css||showCCform|true|Upload|log|console||track_name|length|data|to|upstream|video_ad|doPlay|prevt|uniform|captions|srt|file|01|co|upstreamcdn|s16|remove|this|scrolling|frameborder|upload_srt|src|prop|50px|margin|1000001|iframe|center|align|text|rgba|background|1000000|left|absolute|pause|setCurrentCaptions|contains|item|content|settings|jw|ready|setCurrentAudioTrack|name|for|getAudioTracks|set_audio_track|html|fviews|embed|267fa4cdd6d2a0fb52948a20ccd4d99a|1635909002|71|425369|hash|view|dl|get|undefined|cRAds|window|return|hide|show|complete|seek|slow|fadeIn|video_ad_fadein|time|cache|Cache||Content|headers|ajaxSetup|v2done|tott|vastdone2|vastdone1|cast|aboutlink|abouttext|90|fontOpacity|edgeStyle|backgroundOpacity|Verdana|fontFamily|fontSize|FFFFFF|color|kind|SRT|label|empty|androidhls|metadata|preload|1444|duration|stretching|jpg|00085|image|m3u8|master|urlset|w47rzks6brbnx2nrozx2mx5nks65xxvhnlov462hekycn43r7t7gvynvtlga|hls|sources|setup'.split('|')))
+
+output:
+=======
+  jwplayer("vplayer").setup({sources:[{file:"https://s16.upstreamcdn.co/hls/,w47rzks6brbnx2nrozx2mx5nks65xxvhnlov462hekycn43r7t7gvynvtlga,.urlset/master.m3u8"}],image:"https://s16.upstreamcdn.co/i/01/00085/nfknn582q4zs.jpg",width:"100%",height:"100%",stretching:"uniform",duration:"1444.01",preload:'metadata',androidhls:"true",tracks:[{file:"/srt/empty.srt",label:"Upload SRT",kind:"captions"}],captions:{color:'#FFFFFF',fontSize:16,fontFamily:"Verdana",backgroundOpacity:0,edgeStyle:'uniform',fontOpacity:90},abouttext:"",aboutlink:"https://upstream.to",cast:{}});var vvplay,vvad;var vastdone1=0,vastdone2=0;var player=jwplayer();var prevt=0,tott=0,v2done=0;$.ajaxSetup({headers:{'Content-Cache':'no-cache'}});player.on('time',function(x){if(5>0&&x.position>=5&&vvad!=1){vvad=1;$('div.video_ad_fadein').fadeIn('slow')}});player.on('seek',function(x){prevt=x.position});player.on('play',function(x){doPlay(x)});player.on('complete',function(){$('div.video_ad').show()});function doPlay(x){$('div.video_ad').hide();if(vvplay)return;vvplay=1;adb=0;if(window.cRAds===undefined){adb=1}$.get('https://upstream.to/dl?op=view&file_code=nfknn582q4zs&hash=425369-71-38-1635909002-267fa4cdd6d2a0fb52948a20ccd4d99a&embed=1&adb='+adb,function(data){$('#fviews').html(data)});}function set_audio_track(){var tracks=player.getAudioTracks(track_name);console.log(tracks);if(tracks.length>1){for(i=0;i<tracks.length;i++){if(tracks[i].name==track_name){console.log('!!='+i);player.setCurrentAudioTrack(i)}}}}player.on('ready',function(){$('.jw-settings-content-item:contains("Upload")').click(function(e){showCCform();jwplayer().setCurrentCaptions(0);jwplayer().pause(true)});function showCCform(){var $dd=$("<div />").css({position:"absolute",width:"100%",height:"100%",left:0,top:0,zIndex:1000000,background:"rgba(10%, 10%, 10%, 0.4)","text-align":"center"});$("<iframe />").css({width:"60%",height:"60%",zIndex:1000001,"margin-top":"50px"}).prop({'src':'/?op=upload_srt&file_code=nfknn582q4zs','frameborder':'0','scrolling':'no'}).appendTo($dd);$dd.click(function(){$(this).remove();jwplayer().play()});$dd.appendTo($('#vplayer'))}});
+
+--------------------------------------------------------------------------------
