@@ -1,6 +1,6 @@
-### [upstream.to](https://github.com/warren-bank/crx-upstream-to/tree/webmonkey-userscript/es5)
+### [UpStream](https://github.com/warren-bank/crx-UpStream/tree/webmonkey-userscript/es5)
 
-[Userscript](https://github.com/warren-bank/crx-upstream-to/raw/webmonkey-userscript/es5/webmonkey-userscript/upstream-to.user.js) to run in both:
+[Userscript](https://github.com/warren-bank/crx-UpStream/raw/webmonkey-userscript/es5/webmonkey-userscript/UpStream.user.js) to run in both:
 * the [WebMonkey](https://github.com/warren-bank/Android-WebMonkey) application for Android
 * the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) web browser extension for Chrome/Chromium
 

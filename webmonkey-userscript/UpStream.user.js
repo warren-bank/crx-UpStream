@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         upstream.to
+// @name         UpStream
 // @description  Watch videos in external player.
 // @version      1.0.0
 // @match        *://upstream.to/*
@@ -7,10 +7,10 @@
 // @icon         https://upstream.to/assets/images/favicon/favicon-32x32.png
 // @run-at       document-end
 // @grant        unsafeWindow
-// @homepage     https://github.com/warren-bank/crx-upstream-to/tree/webmonkey-userscript/es5
-// @supportURL   https://github.com/warren-bank/crx-upstream-to/issues
-// @downloadURL  https://github.com/warren-bank/crx-upstream-to/raw/webmonkey-userscript/es5/webmonkey-userscript/upstream-to.user.js
-// @updateURL    https://github.com/warren-bank/crx-upstream-to/raw/webmonkey-userscript/es5/webmonkey-userscript/upstream-to.user.js
+// @homepage     https://github.com/warren-bank/crx-UpStream/tree/webmonkey-userscript/es5
+// @supportURL   https://github.com/warren-bank/crx-UpStream/issues
+// @downloadURL  https://github.com/warren-bank/crx-UpStream/raw/webmonkey-userscript/es5/webmonkey-userscript/UpStream.user.js
+// @updateURL    https://github.com/warren-bank/crx-UpStream/raw/webmonkey-userscript/es5/webmonkey-userscript/UpStream.user.js
 // @namespace    warren-bank
 // @author       Warren Bank
 // @copyright    Warren Bank
